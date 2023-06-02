@@ -1,0 +1,38 @@
+body {
+    background-color: #27374D;
+    color: #fff;
+    font-family: 'Comfortaa', cursive;
+}
+
+.code {
+    background-color: #9DB2BF;
+}
+
+#total::before {
+    content: "Total ";
+}
+
+#total {
+    background-color: #B70404;
+    /* background-color:#008000; */
+}
+
+.inputs input,
+.output input {
+    outline: none !important;
+    border: none;
+    background-color: #DDE6ED;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    color: black;
+}
+
+.inputs input:focus {
+    background-color: #9DB2BF;
+    color: black;
+}
+
+.search .btn-search button:hover {
+    color: white !important;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <!-- Web font -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- css style min -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>curds</title>
+</head>
+
+<body>
+    <div class="container mt-5 w-50  ">
+        <div class="head code shadow p-2 mb-5 rounded text-dark ">
+            <h2 class="text-center">CURDS</h2>
+            <p class="text-center fw-bold fs-4  "> Create - Read - Update - Delete - search </p>
+        </div>
+
+        <div class="inputs ">
+            <input type="text" class="w-100 " placeholder="Title" id="title">
+            <div class="price d-flex ">
+                <input onkeyup="getTotal()" type="number" id="price" placeholder="PRICE" class="w-100 ouline">
+                <input onkeyup="getTotal()" type="number" id="taxes" placeholder="TAXES" class="w-100">
+                <input onkeyup="getTotal()" type="number" id="ad" placeholder="ADS" class="w-100">
+                <input onkeyup="getTotal()" type="number" id="discount" placeholder="DISCOUNT" class="w-100">
+                <small id="total" class="mt-2 mb-2 p-2 rounded  text-center"></small>
+            </div>
+            <input type="number" class="w-100 " placeholder="COUNT" id="count">
+            <input type="text" class="w-100 " placeholder=" CATEGORY" id="category">
+
+            <button class="btn bg-success w-100  pointer text-white rounded-2 mt-2 text-uppercase " id="create">create</button>
+
+        </div>
+
+        <div class="output">
+            <div class="search ">
+                <input type="text" class="w-100 mt-3 " placeholder="search..." id="search">
+                <div class="btn-search d-flex justify-content-between ">
+                    <button class="btn bg-info w-25 pointer text-dark rounded-2 m-2 up text-uppercase " id="searchCategory">search by
+                        category</button>
+                    <button class="btn bg-info w-25 pointer text-dark rounded-2  2 m-2 text-uppercase" id="searchTitle">search by Title
+                    </button>
+                </div>
+
+                <div id="deleteAll">
+
+                </div>
+
+
+                <table class=" table mt-5 text-white fw-lighter">
+                    <thead class="table-dark text-center w-100">
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Price</th>
+                            <th>Taxes</th>
+                            <th>ads</th>
+                            <th>DISCOUNT</th>
+                            <th>Total</th>
+                            <th>count</th>
+                            <th>category</th>
+                            <th>Update</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center fw-bold w-100 " ID="tablerow">
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JS -->
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+
+</body>
+
+</html>
