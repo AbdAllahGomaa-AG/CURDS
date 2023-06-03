@@ -10,15 +10,15 @@ live demo :
 https://abdallahgomaa-ag.github.io/CURDS/
 
 
-in this website built function
-1 - create a Total
-2 - create products
-3 - clear input fields
-4 - red input (output)
-5 - delete
-6 - delete All
-7 - count
-8 - Update
-9 - search
+#in this website built function
+#1 - create a Total
+#2 - create products
+#3 - clear input fields
+#4 - red input (output)
+#5 - delete
+#6 - delete All
+#7 - count
+#8 - Update
+#9 - search
 
 
